@@ -13,19 +13,17 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+footer, header, hgroup, menu, nav, section 
+    
+    display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -47,25 +45,61 @@ table {
     margin:0;
     max-width:100%
 }
-h1{font-family: 'Chelsea Market', cursive;}
-nav{
-padding:2% 0;
-padding:1% 0;
+/*general styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    line-height:1.5;
+    color:#4F4F4F; /*easier to read then back on white*/
+    font-family: 'Roboto Mono', monospace;
+}
+h1{
+    font-family: 'Chelsea Market', cursive;
+    font-size:5rem;
+}
+section{
+    padding: 4% 0;
+}
+/*styles end*/
+
+nav{padding:2% 0;}
+a{text-decoration: none;}
+nav a{display:inline-block
+padding 1% 0%;
 width:10%;
 border-radius:10px;
 text-align:center;
-color:#fff;
+color:#fff;}
 
 .orange{background-color:#FF764E;}
 .blue{background-color:#5ED3EB;}
-.yellow{background-color:#FFCD69;}
+.yellow{background-color:#FFCD69;
+margin-right:10%}
 
 .left img{
-    border-radius:50%;
+    border-radius:50%
+    width:70%;
 }
 .left, .right{display:inline-block;}
-.left{width:40%}
-.right{width:45%}
-.right div{position:absolute;
-top: 100%}
-.top{}
+.left{width:40%
+text-align:center;}
+.right{width:45%
+text-align:center;}
+top: 100%;}
+.right{width:45%
+margin-left:3%;
+position:absolute
+text-align:center;
+top:10%;
+}
+.top{position:relative;}
+.keanu{background-image: url("assets/footer_img.jpg");
+background-repeat: no repeat;
+background-size: cover;
+background-position: top;
+}
+
+.backgroundparagraph{background-color:#DDB9A3}
+.footer{background-color:#F9E7DC;}
